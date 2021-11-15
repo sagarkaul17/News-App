@@ -2,7 +2,6 @@ import './App.css';
 import React, { Component } from 'react'
 import NavBar from './components/NavBar';
 import News from './components/News';
-import About from './components/About';
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,10 +16,25 @@ export default class App extends Component {
         <NavBar/>
         <Switch>
           <Route exact path="/">
-            <News pageSize={9}/>
+            <News key="general" pageSize={9} category="general"/>
           </Route>
-          <Route exact path="/about">
-            <About/>
+          <Route key="business" exact path="/business">
+            <News pageSize={9} category="business"/>
+          </Route>
+          <Route key="entertainment" exact path="/entertainment">
+            <News pageSize={9} category="entertainment"/>
+          </Route>
+          <Route key="health" exact path="/health">
+            <News pageSize={9} category="health"/>
+          </Route>
+          <Route key="science" exact path="/science">
+            <News pageSize={9} category="science"/>
+          </Route>
+          <Route key="sports" exact path="/sports">
+            <News pageSize={9} category="sports"/>
+          </Route>
+          <Route key="technology" exact path="/technology">
+            <News pageSize={9} category="technology"/>
           </Route>
         </Switch>
       </Router>
