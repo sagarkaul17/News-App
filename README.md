@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# NewsMonkey
+
+NewsMonkey is a news website which delivers the latest news across different categories like business, health, entertainment, sports, technology, etc. 
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
